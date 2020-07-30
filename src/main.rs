@@ -1,3 +1,7 @@
+use std::time::SystemTime;
+
 fn main() {
-    println!("Hello, world!");
+    loop {
+        println!("{:?}", SystemTime::now());
+    }
 }
