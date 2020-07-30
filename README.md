@@ -60,7 +60,7 @@ Or if you've already cloned it:
 
 ```sh
 cd limestatus
-sudo cargo install --path .
+sudo cargo install --path . --root /usr/local
 ```
 
 ### Example command
