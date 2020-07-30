@@ -6,7 +6,7 @@ Generates status bar to use with lemonbar
 
 <!-- vim-markdown-toc GFM -->
 
-* [How it (should) look like](#how-it-should-look-like)
+* [Preview](#preview)
 * [Features](#features)
 * [Usage](#usage)
     * [Dependencies](#dependencies)
@@ -15,10 +15,18 @@ Generates status bar to use with lemonbar
 
 <!-- vim-markdown-toc -->
 
-## How it (should) look like
+## Preview
+
+How it should look like:
 
 ```
 1 2 3 · 5 · · · 9 0                           04:20            直lmeo  10% ﬙ 6.96 GB  96% 奔---
+```
+
+How it looks like now:
+
+```
+1                                             04:20                                         96%
 ```
 
 ## Features
