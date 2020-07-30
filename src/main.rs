@@ -7,7 +7,7 @@ use std::time::Duration;
 use std::thread::sleep;
 
 extern crate systemstat;
-use systemstat::{System, Platform, saturating_sub_bytes};
+use systemstat::{System, Platform};
 
 fn battery() -> i32 {
     let sys = System::new();
@@ -15,7 +15,7 @@ fn battery() -> i32 {
     match sys.battery_life() {
         Ok(battery) =>
             (battery.remaining_capacity * 100.0) as i32,
-        Err(x) =>
+        Err(_) =>
             0
     }
 }
