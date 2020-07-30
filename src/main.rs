@@ -7,6 +7,6 @@ fn main() {
     loop {
         let system_time = SystemTime::now();
         let datetime: DateTime<Utc> = system_time.into();
-        println!("{}", datetime.format("%d/%m/%Y %T"));
+        println!("{}", datetime.format("%R - %a, %b %d"));
     }
 }
