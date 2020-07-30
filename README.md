@@ -4,6 +4,8 @@
 
 Generates status bar to use with lemonbar
 
+## Table of contents
+
 <!-- vim-markdown-toc GFM -->
 
 * [How it (should) look like](#how-it-should-look-like)
