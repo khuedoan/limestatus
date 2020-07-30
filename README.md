@@ -1,6 +1,4 @@
-# limestatus
-
-**WORK IN PROGRESS**
+# limestatus (WORK IN PROGRESS, DO NOT USE)
 
 Generates status bar to use with lemonbar
 
