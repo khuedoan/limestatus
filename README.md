@@ -32,16 +32,10 @@ Generates status bar to use with lemonbar
 
 ## Usage
 
-Compile from source
+Compile and install:
 
 ```sh
-cargo build --release
-```
-
-Then copy the binary file to your `$PATH`, for example:
-
-```sh
-cp target/release/limestatus /usr/local/bin/
+sudo cargo install --path .
 ```
 
 To launch the bar, pipe `limestatus` output to `lemonbar`, for example:
