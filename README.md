@@ -32,9 +32,16 @@ Generates status bar to use with lemonbar
 
 ## Usage
 
-Compile and install:
+Compile and install without cloning this repository:
 
 ```sh
+sudo cargo install --git https://github.com/khuedoan/limestatus.git --root /usr/local
+```
+
+Or if you've already cloned it:
+
+```sh
+cd limestatus
 sudo cargo install --path .
 ```
 
