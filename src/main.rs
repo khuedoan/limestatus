@@ -10,7 +10,7 @@ fn main() {
     loop {
         let system_time = SystemTime::now();
         let datetime: DateTime<Utc> = system_time.into();
-        println!("{}", datetime.format("%R - %a, %b %d"));
+        println!("%{{c}}{}", datetime.format("%R - %a, %b %d"));
         sleep(Duration::from_secs(1));
     }
 }
