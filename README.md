@@ -11,6 +11,9 @@ Generates status bar to use with lemonbar
 * [How it (should) look like](#how-it-should-look-like)
 * [Features](#features)
 * [Usage](#usage)
+    * [Dependencies](#dependencies)
+    * [Installation](#installation)
+    * [Example command](#example-command)
 
 <!-- vim-markdown-toc -->
 
@@ -34,6 +37,13 @@ Generates status bar to use with lemonbar
 
 ## Usage
 
+### Dependencies
+
+- `lemonbar`
+- `cargo` (build)
+
+### Installation
+
 Compile and install without cloning this repository:
 
 ```sh
@@ -46,6 +56,8 @@ Or if you've already cloned it:
 cd limestatus
 sudo cargo install --path .
 ```
+
+### Example command
 
 To launch the bar, pipe `limestatus` output to `lemonbar`, for example:
 
