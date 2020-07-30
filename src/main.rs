@@ -6,11 +6,25 @@ use chrono::DateTime;
 use std::time::Duration;
 use std::thread::sleep;
 
+extern crate systemstat;
+use systemstat::{System, Platform, saturating_sub_bytes};
+
+fn battery() -> i32 {
+    let sys = System::new();
+
+    match sys.battery_life() {
+        Ok(battery) =>
+            (battery.remaining_capacity * 100.0) as i32,
+        Err(x) =>
+            0
+    }
+}
+
 fn main() {
     loop {
         let system_time = SystemTime::now();
         let datetime: DateTime<Utc> = system_time.into();
-        println!("%{{c}}{}", datetime.format("%R - %a, %b %d"));
+        println!(" %{{c}}{} %{{r}} {:?}% ", datetime.format("%R - %a, %b %d"), battery());
         sleep(Duration::from_secs(1));
     }
 }
